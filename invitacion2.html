@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invitación de Cumpleaños</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            text-align: center;
+            padding: 20px;
+        }
+        .container {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            max-width: 400px;
+            margin: auto;
+        }
+        .button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px 20px;
+            text-align: center;
+            display: inline-block;
+            font-size: 16px;
+            margin: 10px 2px;
+            cursor: pointer;
+            border-radius: 12px;
+            text-decoration: none;
+        }
+        .button:hover {
+            background-color: #45a049;
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="https://example.com/up-background.jpg" alt="Up Background" style="width:100%; border-radius: 10px;">
+        <h1>¡Ven a celebrar el primer cumpleaños de [Nombre del Niño]!</h1>
+        <a href="#info" class="button" onclick="showInfo()">¡Comienza la Aventura!</a>
+        <div id="info" class="hidden">
+            <p><strong>Fecha y Hora:</strong> 26 de abril a las 3 de la tarde.</p>
+            <p><strong>Dirección:</strong> Auf dem Kamp 15c</p>
+            <a href="https://wa.me/4915125028274" class="button">Confirmar Asistencia</a>
+        </div>
+    </div>
+
+    <script>
+        function showInfo() {
+            document.getElementById('info').classList.toggle('hidden');
+        }
+    </script>
+</body>
+</html>
